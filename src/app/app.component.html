@@ -1,0 +1,16 @@
+<h1>hello</h1>
+<!-- <angular-markdown-editor
+  textareaId="editor1"
+  name="markdownText" [(ngModel)]="content"
+  [options]="options">
+</angular-markdown-editor> -->
+<md-editor name="Content"
+  [preRender]="preRenderFunc"
+  [postRender]="postRenderFunc"
+  [height]="'200px'"
+  (onEditorLoaded)="onEditorLoaded($event)"
+  (onPreviewDomChanged)="onPreviewDomChanged($event)"
+  required
+  maxlength="500">
+  <slot custom-btns></slot>
+</md-editor>
