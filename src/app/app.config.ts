@@ -5,6 +5,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { AngularMarkdownEditorModule } from 'angular-markdown-editor';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes),provideHttpClient(), importProvidersFrom(AngularMarkdownEditorModule.forRoot({ iconlibrary: 'fa' }))
+  providers: [provideRouter(routes),provideHttpClient(),
+     importProvidersFrom(AngularMarkdownEditorModule.forRoot({ iconlibrary: 'fa' }))
   ]
 };
